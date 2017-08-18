@@ -1,3 +1,104 @@
 ---
 layout: default
 ---
+
+<div class="row carousel-container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active item1">
+            <h1>Image 1</h1>
+            <p>Put some text here</p>
+        </div>
+
+        <div class="item item2">
+            <h1>Image 2</h1>
+            <p>Put some text here</p>
+        </div>
+
+        <div class="item item3">
+            <h1>Image 3</h1>
+            <p>Put some text here</p>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+</div>
+
+<nav class="navbar navbar-inverse site-navbar" data-spy="affix" data-offset-top="400">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand brand" href="{{ site.baseurl }}">GNU Linux Users' Group</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"> Home </a></li>
+                <li><a href="#"> About Us </a></li>
+                <li><a href="#"> Events </a></li>
+                <li><a href="#"> Blog </a></li>
+                <li><a href="#"> Contact Us </a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="row about-us">
+    <h1>About Us</h1>
+    <div id="who-are-we" class="col-md-4">
+        <h2>Who are we</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam odio, mattis ut hendrerit in, bibendum ut tellus. Etiam maximus quam ac ligula scelerisque, nec finibus elit varius. Duis et ipsum et libero bibendum venenatis a at nisl. Donec eu mi non erat dignissim aliquet. Vivamus vitae semper lectus. Donec imperdiet eget nunc a hendrerit.</p>
+        <a href="#">Meet our members</a>
+    </div>
+    <div id="what-we-do" class="col-md-4">
+        <h2>What we do</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam odio, mattis ut hendrerit in, bibendum ut tellus. Etiam maximus quam ac ligula scelerisque, nec finibus elit varius. Duis et ipsum et libero bibendum venenatis a at nisl. Donec eu mi non erat dignissim aliquet. Vivamus vitae semper lectus. Donec imperdiet eget nunc a hendrerit. Etiam mattis mi ac elit vestibulum, id gravida neque varius.</p>
+        <a href="#">See our repositories</a>
+    </div>
+    <div id="why-we-do" class="col-md-4">
+        <h2>Why we do</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam odio, mattis ut hendrerit in, bibendum ut tellus. Etiam maximus quam ac ligula scelerisque, nec finibus elit varius. Duis et ipsum et libero bibendum venenatis a at nisl. Donec eu mi non erat dignissim aliquet. Vivamus vitae semper lectus. Donec imperdiet eget nunc a hendrerit. Mauris libero lorem, porta at lorem nec, vestibulum posuere lectus.</p>
+        <a href="#">See our motto</a>
+    </div>
+    <blockquote class="blockquote col-xs-12">
+        <p>Throw in a quote here</p>
+        <footer>Someone famous, or maybe not</footer>
+    </blockquote>
+</div>
+
+<div class="row contact">
+    <h1>Want to reach us?</h1>
+    <div class="col-md-4" id="left">
+        <h1>Column 1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam odio, mattis ut hendrerit in, bibendum ut tellus. Etiam maximus quam ac ligula scelerisque, nec finibus elit varius.</p>
+    </div>
+    <div class="col-md-4" id="middle">
+        <h1>Column 2</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam odio, mattis ut hendrerit in, bibendum ut tellus. Etiam maximus quam ac ligula scelerisque, nec finibus elit varius.</p>
+    </div>
+    <div class="col-md-4" id="right">
+        <h1>Column 3</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam odio, mattis ut hendrerit in, bibendum ut tellus. Etiam maximus quam ac ligula scelerisque, nec finibus elit varius.</p>
+    </div>
+</div>
