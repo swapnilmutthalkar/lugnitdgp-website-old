@@ -10,6 +10,7 @@ github_username:  lugnitdgp
 # Build settings
 markdown: kramdown
 theme: minima
+future: true
 plugins:
   - jekyll-feed
 

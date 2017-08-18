@@ -109,3 +109,7 @@ h1, p {
     text-align: justify;
     padding: 25px 30px;
 }
+
+{% include css/post.css %}
+
+{% include css/blog.css %}

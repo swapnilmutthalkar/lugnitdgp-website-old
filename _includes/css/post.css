@@ -1,0 +1,30 @@
+.post {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.post h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.post h6 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.post h6 .date {
+    font-size: 15px;
+    color: #999;
+    font-weight: 400;
+}
+
+.post-content {
+    margin-top: 20px;
+}
+
+.post .post-content p {
+    font-size: 14px;
+    font-family: "Times New Roman", Georgia, Serif;
+    text-align: justify;
+}

@@ -1,0 +1,14 @@
+.blog {
+    margin-top: 30px;
+}
+
+.blog p {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.blog ol li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
