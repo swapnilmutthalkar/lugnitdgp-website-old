@@ -2,7 +2,6 @@ title: GNU Linux Users' Group, NIT Durgapur
 email: your-email@example.com
 description: > # Needs to changed
   Official website of GNU Linux Users' Group, NIT Durgapur
-baseurl: "https://lugnitdgp.github.io"
 url: ""
 twitter_username: jekyllrb
 github_username:  lugnitdgp
