@@ -1,0 +1,71 @@
+.events > h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Open sans';
+}
+
+.events > .row {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.events > .row > div > div {
+    padding: 15px 20px;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+.events > .row > div > div > img {
+    width: 100%;
+}
+
+.events > .row > div > div > h5 {
+    color: #333;
+    font-size: 1.4em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.events > .row > div > div > p {
+    margin-top: 15px;
+}
+
+.events > .row > div > div > p > a {
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.events > .row > div > div > p > a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.events > .row > div > div > p > span {
+    font-size: 0.9em;
+    font-family: 'Raleway', sans-serif;
+    display: none;
+    margin-bottom: 0;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.events i.date  {
+    color: #257aea;
+}
+
+.events i.time {
+    color: #cc0825;
+}
+
+.events h6 {
+    font-size: 1em;
+    padding-left: 20px;
+}
+
+.events i {
+    font-size: 1.6em;
+    margin-top: 5px;
+}

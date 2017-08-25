@@ -1,0 +1,52 @@
+.about-us {
+    margin-top: 30px;
+}
+
+.about-us > .row > div {
+    padding: 10px 3%;
+    height: 80%;
+}
+
+.about-us > .row > h2 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.about-us div p {
+    font-size: 1.05em;
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+}
+
+.about-us div i {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 38px;
+    color: #f70d0d;
+}
+
+.row-eq-height > div > btn {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+}
+
+.blockquote {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.contact {
+    margin: 30px 75px;
+}
+
+.contact h1 {
+    text-align: center;
+    font-size: 50px;
+    line-height: 75px;
+}
+
+.contact div {
+    height: 250px;
+    text-align: justify;
+    padding: 25px 30px;
+}
