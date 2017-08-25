@@ -6,17 +6,13 @@ date: 2017-08-25T14:26:52.746Z
 **LINUX** is the
 most frequently heard FOSS buzzword in the mass media today. However, because
 of its common usage and certain misconceptions that beginners possess, the definition
-of the term Linux has expanded. With the goal of familiarising beginners/ prospective
-developers with the revolution that is Linux and open source, *GNU/Linux User’s
-Group of NIT Durgapur* conducted a workshop. The
-footfall was commendable and largely consisted of beginners, taking their first
-steps in the cosmos of Linux. 
+of the term Linux has expanded. Considering that Linux is used by many tech giants, it was our clubs responsibility to promote its usage among different kinds of students, especially for newbies.
 
 The workshop started off with the definition of GNU/Linux
 clearing the biggest misconception of Linux being an operating system. Linux is
 kernel which is useless in absence of an operating system! The interesting
-origin of Linux also piqued the interest of the attendees. How Richard
-Stallman, the software freedom activist and programmer, launched the GNU
+origin of Linux also piqued the interest of the attendees. How **Richard
+Stallman**, the software freedom activist and programmer, launched the GNU
 project to get an OS comprising entirely of free software. What student
 wouldn’t be able to relate to the importance of free things?
 
@@ -36,11 +32,10 @@ antivirus updates and browse any file without fear.
 
 ![null](/images/uploads/Screen Shot 2017-08-25 at 8.33.23 PM.png)
 
-The workshop eloquently discussed the customisable nature of
-Linux. It gives you the option of customising distributions or *distros*, environments, window manager and themes according to your
-convenience! Linux *distros *which are basically OS based on a Linux kernel and
-package management systems were discussed in abundance. Variety is the spice of
-life and Linux firmly believes that. It provides us with a list of *distros* to
+The workshop discussed the how easy it is to customize different programs in Linux. It gives you the option of customizing distributions or *distros*, environments, window manager and themes according to your
+convenience! Linux distros which are basically OS based on a Linux kernel and
+package management systems were discussed in abundance. **Variety is the spice of
+life and Linux firmly believes that**. It provides us with a list of *distros* to
 choose from as per our convenience:
 
 ![null](/images/uploads/Screen Shot 2017-08-25 at 8.34.32 PM.png)
@@ -50,7 +45,7 @@ of the desktop environments for the *distros* (Mint users might get this one) li
 **GNOME**, **KDE**, **XFCE**, **Pantheon**, etc.
 
 Apart from the innumerable choices, the workshop talked
-about how Linux gives us power. What take us an eternity to install in Windows,
+about how Linux **gives us power**. What take us an eternity to install in Windows,
 can be done with in Linux by typing about four odd words in the ***terminal***. The
 workshop also gave the attendees a brief understanding of which *distro* would be
 right for them and well if one *distro* doesn’t sit right with them, they can
