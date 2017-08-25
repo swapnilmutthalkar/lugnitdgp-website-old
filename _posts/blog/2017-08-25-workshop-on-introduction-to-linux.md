@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: Workshop on Introduction to Linux
-date: 2017-08-25T14:26:52.746Z
+date: '2017-08-25 12:26:52 +0530'
 ---
 **LINUX** is the
 most frequently heard FOSS buzzword in the mass media today. However, because
