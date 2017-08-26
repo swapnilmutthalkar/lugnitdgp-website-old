@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: posts
 ---
 
 {% for post in site.posts reversed %}
