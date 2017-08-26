@@ -7,6 +7,8 @@
 
 {% include css/navbar.css %}
 
+{% include css/footer.css %}
+
 {% include css/about-us.css %}
 
 {% include css/events.css %}

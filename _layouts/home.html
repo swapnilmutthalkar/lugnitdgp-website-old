@@ -44,19 +44,19 @@ layout: default
 </div>
 
 <div id="about-us" class="container about-us">
-    <h1>About Us</h1>
+    <h1 class="text-center">About Us</h1>
     <div class="row">
         <div id="who-are-we" class="col-md-4">
             <h2>Who are we</h2>
             <i class="material-icons">supervisor_account</i>
             <p>The GNU/Linux User’s Group, NIT Durgapur is a community of GNU/Linux Users that promote the use of Free and Open Source Software. The Group was established in 2003 by a bunch of FOSS enthusiasts with the idea of popularising and contributing to Open Source. We are a plethora of designers, contributors and developers that believe in learning and sharing through opening up your mind to Open Source.</p>
-            <btn class="btn btn-primary btn-lg" href="#" role="button">Meet our members &raquo;</a></btn>
+            <btn class="btn btn-default btn-lg" href="#" role="button">Meet our members &raquo;</a></btn>
         </div>
         <div id="what-we-do" class="col-md-4">
             <h2>What we do</h2>
             <i class="material-icons">code</i>
             <p>We provide budding enthusiasts like ourselves a forum to contribute and learn about FOSS. Through varied workshops on revolutionary Open Technologies throughout the year, we spread the idea of Open Source to beginners and veterans alike. We bring people together to ideate and contribute to the leading Open technologies. We provide help and resources to everyone who wants to make the web world a better place.</p>
-            <btn class="btn btn-success btn-lg" href="#" role="button">See our repositories &raquo;</a></btn>
+            <btn class="btn btn-default btn-lg" href="#" role="button">See our repositories &raquo;</a></btn>
         </div>
         <div id="why-we-do" class="col-md-4">
             <h2>Why we do it</h2>
@@ -88,7 +88,7 @@ layout: default
 </div> -->
 
 <div id="events" class="container events">
-    <h1>Events</h1>
+    <h1 class="text-center">Events</h1>
     <h2>Featured Events</h2>
     <div class="row">
         {% assign counter = 0 %}
@@ -98,11 +98,11 @@ layout: default
                 <div class="col-md-4">
                     <div class="row">
                         <img src="{{ site.baseurl }}{{ event.thumbnail }}" class="col-xs-12">
-                        <h5 class="col-xs-12">{{ event.title }}</h5>
+                        <h4 class="col-xs-12">{{ event.title }}</h4>
                         <i class=" date material-icons col-xs-1">date_range</i>
-                        <h6 class="date col-xs-10">{{ event.date | date: '%B %d, %Y' }}</h6>
+                        <h5 class="date col-xs-10">{{ event.date | date: '%B %d, %Y' }}</h5>
                         <i class="time material-icons col-xs-1">alarm</i>
-                        <h6 class="time col-xs-10">{{ event.date | date: '%I:%M %p' }}</h6>
+                        <h5 class="time col-xs-10">{{ event.date | date: '%I:%M %p' }}</h5>
                         <p class="col-xs-12">
                             <span class="excerpt">{{ event.description }}</span>
                             <a class="col-xs-12">Know more &raquo;</a>
@@ -126,11 +126,11 @@ layout: default
                 <div class="col-md-4">
                     <div class="row">
                         <img src="{{ site.baseurl }}{{ event.thumbnail }}" class="col-xs-12">
-                        <h5 class="col-xs-12">{{ event.title }}</h5>
+                        <h4 class="col-xs-12">{{ event.title }}</h4>
                         <i class=" date material-icons col-xs-1">date_range</i>
-                        <h6 class="date col-xs-10">{{ event.date | date: '%B %d, %Y' }}</h6>
+                        <h5 class="date col-xs-10">{{ event.date | date: '%B %d, %Y' }}</h5>
                         <i class="time material-icons col-xs-1">alarm</i>
-                        <h6 class="time col-xs-10">{{ event.date | date: '%I:%M %p' }}</h6>
+                        <h5 class="time col-xs-10">{{ event.date | date: '%I:%M %p' }}</h5>
                         <p class="col-xs-12">
                             <span class="excerpt">{{ event.description }}</span>
                             <a class="col-xs-12">Know more &raquo;</a>
@@ -144,3 +144,5 @@ layout: default
         {% endfor %}
     </div>
 </div>
+
+{% include footer.html %}
