@@ -14,18 +14,18 @@ layout: default
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active item1">
-            <h1>Image 1</h1>
-            <p>Put some text here</p>
+            <h1>Some catchy text here</h1>
+            <p>And here too!</p>
         </div>
 
         <div class="item item2">
-            <h1>Image 2</h1>
-            <p>Put some text here</p>
+            <h1>Some catchy text here</h1>
+            <p>And here too!</p>
         </div>
 
         <div class="item item3">
-            <h1>Image 3</h1>
-            <p>Put some text here</p>
+            <h1>Some catchy text here</h1>
+            <p>And here too!</p>
         </div>
       </div>
 
@@ -43,22 +43,27 @@ layout: default
 
 {% include navbar.html %}
 
-<div id="aboutus" class="row about-us">
+<div id="about-us" class="container about-us">
     <h1>About Us</h1>
-    <div id="who-are-we" class="col-md-4">
-        <h2>Who are we</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam odio, mattis ut hendrerit in, bibendum ut tellus. Etiam maximus quam ac ligula scelerisque, nec finibus elit varius. Duis et ipsum et libero bibendum venenatis a at nisl. Donec eu mi non erat dignissim aliquet. Vivamus vitae semper lectus. Donec imperdiet eget nunc a hendrerit.</p>
-        <a href="#">Meet our members</a>
-    </div>
-    <div id="what-we-do" class="col-md-4">
-        <h2>What we do</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam odio, mattis ut hendrerit in, bibendum ut tellus. Etiam maximus quam ac ligula scelerisque, nec finibus elit varius. Duis et ipsum et libero bibendum venenatis a at nisl. Donec eu mi non erat dignissim aliquet. Vivamus vitae semper lectus. Donec imperdiet eget nunc a hendrerit. Etiam mattis mi ac elit vestibulum, id gravida neque varius.</p>
-        <a href="#">See our repositories</a>
-    </div>
-    <div id="why-we-do" class="col-md-4">
-        <h2>Why we do</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam odio, mattis ut hendrerit in, bibendum ut tellus. Etiam maximus quam ac ligula scelerisque, nec finibus elit varius. Duis et ipsum et libero bibendum venenatis a at nisl. Donec eu mi non erat dignissim aliquet. Vivamus vitae semper lectus. Donec imperdiet eget nunc a hendrerit. Mauris libero lorem, porta at lorem nec, vestibulum posuere lectus.</p>
-        <a href="#">See our motto</a>
+    <div class="row">
+        <div id="who-are-we" class="col-md-4">
+            <h2>Who are we</h2>
+            <i class="material-icons">supervisor_account</i>
+            <p>The GNU/Linux User’s Group, NIT Durgapur is a community of GNU/Linux Users that promote the use of Free and Open Source Software. The Group was established in 2003 by a bunch of FOSS enthusiasts with the idea of popularising and contributing to Open Source. We are a plethora of designers, contributors and developers that believe in learning and sharing through opening up your mind to Open Source.</p>
+            <btn class="btn btn-primary btn-lg" href="#" role="button">Meet our members &raquo;</a></btn>
+        </div>
+        <div id="what-we-do" class="col-md-4">
+            <h2>What we do</h2>
+            <i class="material-icons">code</i>
+            <p>We provide budding enthusiasts like ourselves a forum to contribute and learn about FOSS. Through varied workshops on revolutionary Open Technologies throughout the year, we spread the idea of Open Source to beginners and veterans alike. We bring people together to ideate and contribute to the leading Open technologies. We provide help and resources to everyone who wants to make the web world a better place.</p>
+            <btn class="btn btn-success btn-lg" href="#" role="button">See our repositories &raquo;</a></btn>
+        </div>
+        <div id="why-we-do" class="col-md-4">
+            <h2>Why we do it</h2>
+            <i class="material-icons">timeline</i>
+            <p>Being a bunch of FOSS enthusiasts, we preach the idea of “free things are the best things” and firmly believe in sharing knowledge. We strive to elevate the tech culture in our college and for science to make a difference in the world. We believe that this can only be done through giving people digital resources and knowledge in all realms from hardware to software and data to design. We promote FOSS through various endeavours because we believe in the freedom of expression for everyone.</p>
+            <!-- <btn class="btn btn-info btn-lg" href="#" role="button">See our motto &raquo;</a></btn> -->
+        </div>
     </div>
     <blockquote class="blockquote col-xs-12">
         <p>Throw in a quote here</p>
@@ -66,7 +71,7 @@ layout: default
     </blockquote>
 </div>
 
-<div class="row contact">
+<!-- <div class="row contact">
     <h1>Want to reach us?</h1>
     <div class="col-md-4" id="left">
         <h1>Column 1</h1>
@@ -79,5 +84,63 @@ layout: default
     <div class="col-md-4" id="right">
         <h1>Column 3</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam odio, mattis ut hendrerit in, bibendum ut tellus. Etiam maximus quam ac ligula scelerisque, nec finibus elit varius.</p>
+    </div>
+</div> -->
+
+<div id="events" class="container events">
+    <h1>Events</h1>
+    <h2>Featured Events</h2>
+    <div class="row">
+        {% assign counter = 0 %}
+        {% for event in site.events %}
+            {% if event.type == "featured" %}
+                {% assign counter = counter | plus: 1 %}
+                <div class="col-md-4">
+                    <div class="row">
+                        <img src="{{ site.baseurl }}{{ event.thumbnail }}" class="col-xs-12">
+                        <h5 class="col-xs-12">{{ event.title }}</h5>
+                        <i class=" date material-icons col-xs-1">date_range</i>
+                        <h6 class="date col-xs-10">{{ event.date | date: '%B %d, %Y' }}</h6>
+                        <i class="time material-icons col-xs-1">alarm</i>
+                        <h6 class="time col-xs-10">{{ event.date | date: '%I:%M %p' }}</h6>
+                        <p class="col-xs-12">
+                            <span class="excerpt">{{ event.description }}</span>
+                            <a class="col-xs-12">Know more &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+            {% endif %}
+            {% if counter == 3 %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
+    </div>
+    <h2>Upcoming Events</h2>
+    <div class="row">
+        {% assign counter = 0 %}
+        {% for event in site.events %}
+            {% capture nowtime %}{{ 'now' | date: '%s' }}{% endcapture %}
+            {% capture eventtime %}{{ event.date | date: '%s' }}{% endcapture %}
+            {% if eventtime > nowtime and event.type != "featured" %}
+                {% assign counter = counter | plus: 1 %}
+                <div class="col-md-4">
+                    <div class="row">
+                        <img src="{{ site.baseurl }}{{ event.thumbnail }}" class="col-xs-12">
+                        <h5 class="col-xs-12">{{ event.title }}</h5>
+                        <i class=" date material-icons col-xs-1">date_range</i>
+                        <h6 class="date col-xs-10">{{ event.date | date: '%B %d, %Y' }}</h6>
+                        <i class="time material-icons col-xs-1">alarm</i>
+                        <h6 class="time col-xs-10">{{ event.date | date: '%I:%M %p' }}</h6>
+                        <p class="col-xs-12">
+                            <span class="excerpt">{{ event.description }}</span>
+                            <a class="col-xs-12">Know more &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+            {% endif %}
+            {% if counter == 3 %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
     </div>
 </div>
