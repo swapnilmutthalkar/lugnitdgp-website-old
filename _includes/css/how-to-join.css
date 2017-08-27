@@ -1,3 +1,8 @@
-.how-to-join > .container {
+.how-to-join {
     margin-top: 75px;
+}
+
+.how-to-join h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
 }
