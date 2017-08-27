@@ -1,6 +1,7 @@
 ---
 
 ---
+
 {% include css/general.css %}
 
 {% include css/carousel.css %}
@@ -24,3 +25,5 @@
 {% include css/how-to-join.css %}
 
 {% include css/our-activities.css %}
+
+{% include css/members.css %}
