@@ -1,0 +1,16 @@
+.featured-projects .projects {
+    margin-bottom: 30px;
+}
+
+.featured-projects .projects p {
+    font-size: 1.2em;
+}
+
+.featured-projects .projects h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.featured-projects .projects img {
+    max-height: 300px;
+}

@@ -13,6 +13,8 @@
 
 {% include css/events.css %}
 
+{% include css/featured.css %}
+
 {% include css/post.css %}
 
 {% include css/blog.css %}

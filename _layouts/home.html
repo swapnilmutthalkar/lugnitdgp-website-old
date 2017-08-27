@@ -145,4 +145,19 @@ layout: default
     </div>
 </div>
 
+<div id="featured-projects" class="container featured-projects">
+    <h1 class="text-center">Featured Projects</h1>
+    {% for project in site.featured_projects %}
+    <div class="projects row">
+        <h2>{{ project.title }}</h2>
+        <div class="col-md-3">
+            <img class="img-responsive" src="{{ site.baseurl }}/images/uploads/{{ project.thumbnail }}">
+        </div>
+        <div class="col-md-9">
+            {{ project.content }}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
 {% include footer.html %}

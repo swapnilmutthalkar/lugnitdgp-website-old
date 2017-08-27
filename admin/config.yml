@@ -28,3 +28,15 @@ collections:
       - {label: "Path to Thumbnail", name: "thumbnail", widget: "string"}
       - {label: "Thumbnail", widget: "image"}
       - {label: "Type", name: "type", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "featured_projects"
+    label: "Featured Projects"
+    folder: "_featured_projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Path to Thumbnail", name: "thumbnail", widget: "string"}
+      - {label: "Thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
