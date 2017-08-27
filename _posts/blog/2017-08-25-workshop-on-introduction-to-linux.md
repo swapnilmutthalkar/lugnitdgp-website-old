@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: posts
 title: Workshop on Introduction to Linux
 date: '2017-08-25 12:26:52 +0530'
 ---
