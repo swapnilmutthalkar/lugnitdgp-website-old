@@ -11,19 +11,21 @@
 
 	<!-- Import Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="{{ site.baseurl }}/fonts/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 	<!-- Import CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/fonts/fontAwesome/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css"> -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
 
 </head>
 
 <body>
+    {% if page.layout == "home" %}
+        {% include facebook-javascript-sdk.html %}
+    {% endif %}
     <div class="container-fluid">
         {{ content }}
     </div>

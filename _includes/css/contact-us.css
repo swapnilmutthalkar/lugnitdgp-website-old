@@ -1,0 +1,30 @@
+.contact-us {
+    padding-bottom: 30px;
+}
+
+.contact-us h1 {
+    margin-bottom: 40px;
+}
+
+.contact-us .right h4 {
+    margin-top: 0;
+}
+
+.contact-us .center .gitter {
+    color: #333;
+}
+
+.contact-us .center .gitter:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+}
+
+.contact-us .center .gitter img {
+    height: 25px;
+}
+
+.contact-us .center .gitter strong {
+    font-size: 1.1em;
+    padding-left: 10px;
+}
