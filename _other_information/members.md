@@ -1,5 +1,5 @@
 ---
-layout: members
+title: Members
 ---
 
 ## Final years

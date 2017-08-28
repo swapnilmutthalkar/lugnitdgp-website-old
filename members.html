@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+{% include navbar.html %}
+
+<div class="container members">
+    {% for info in site.other_information %}
+        {% if info.title == "Members" %}
+            <h1 class="text-center">Members of our club</h1>
+            {{ info.content }}
+        {% endif %}
+    {% endfor %}
+</div>
+
+{% include footer.html %}

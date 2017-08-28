@@ -41,3 +41,13 @@ collections:
       - {label: "Path to Thumbnail", name: "thumbnail", widget: "string"}
       - {label: "Thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+
+  - name: "other_information"
+    label: "Other Information"
+    folder: "_other_information"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "hidden"}
+      - {label: "Body", name: "body", widget: "markdown"}

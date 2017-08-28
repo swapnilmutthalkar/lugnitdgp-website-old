@@ -1,5 +1,5 @@
 ---
-layout: our-activities
+title: Activities
 ---
 
 **Mukti**- Deemed as the 2nd largest fest in Eastern India, we bring you a range of varied events. From a series of interesting online events that you can participate in from the comfort of your room to the coolest brain wracking offline events, we bring you the best

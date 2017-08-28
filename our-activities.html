@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+{% include navbar.html %}
+
+<div class="our-activities container">
+    {% for info in site.other_information %}
+        {% if info.title == "Activities" %}
+            <h1 class="text-center">Our activities</h1>
+            {{ info.content }}
+        {% endif %}
+    {% endfor %}
+</div>
+
+{% include footer.html %}
