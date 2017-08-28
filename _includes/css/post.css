@@ -28,7 +28,7 @@
     padding-bottom: 2%;
 }
 
-.post h6 {
+.post h6.date {
     font-size: 0.7em;
     text-align: right;
     padding-bottom: 1%;
@@ -36,7 +36,7 @@
     width: 100%;
 }
 
-.post h6 .date {
+.post h6.date span {
     /*font-size: 15px;*/
     color: #999;
     font-weight: 900;

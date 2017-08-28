@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: Workshop on Introduction to Linux
+author: Vartika Arora
 date: '2017-08-25 12:26:52 +0530'
 ---
 **LINUX** is the
