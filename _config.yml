@@ -13,6 +13,8 @@ future: true
 plugins:
   - jekyll-feed
 
+comments: true
+
 collections:
   - events
   - featured_projects

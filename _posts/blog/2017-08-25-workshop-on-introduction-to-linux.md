@@ -3,6 +3,7 @@ layout: posts
 title: Workshop on Introduction to Linux
 author: Vartika Arora
 date: '2017-08-25 12:26:52 +0530'
+comments: true
 ---
 **LINUX** is the
 most frequently heard FOSS buzzword in the mass media today. However, because
