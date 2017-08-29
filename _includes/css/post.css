@@ -29,15 +29,21 @@
 }
 
 .post h6.date {
-    font-size: 0.7em;
-    text-align: right;
-    padding-bottom: 1%;
-    padding-top: 1.4%;
+    font-size: 0.75em;
+    width: 100%;
+}
+
+.post h6.author {
+    font-size: 0.75em;
     width: 100%;
 }
 
 .post h6.date span {
-    /*font-size: 15px;*/
+    color: #999;
+    font-weight: 900;
+}
+
+.post h6.author span {
     color: #999;
     font-weight: 900;
 }
@@ -47,8 +53,9 @@
     margin-bottom: 2%;
 }
 
-.post-content {
-    margin-bottom: 40px;
+.post .post-content {
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 
 .post .post-content p {
