@@ -27,3 +27,5 @@
 {% include css/our-activities.css %}
 
 {% include css/members.css %}
+
+{% include css/event-page.css %}

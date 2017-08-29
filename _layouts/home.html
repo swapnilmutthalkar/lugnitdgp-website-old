@@ -81,7 +81,7 @@ layout: default
                 {% assign counter = counter | plus: 1 %}
                 <div class="col-md-4">
                     <div class="row">
-                        <img src="{{ site.baseurl }}{{ event.thumbnail }}" class="col-xs-12">
+                        <img src="{{ site.baseurl }}/images/uploads/{{ event.thumbnail }}" class="col-xs-12">
                         <h4 class="col-xs-12">{{ event.title }}</h4>
                         <i class=" date material-icons col-xs-1">date_range</i>
                         <h5 class="date col-xs-10">{{ event.date | date: '%B %d, %Y' }}</h5>
@@ -99,7 +99,15 @@ layout: default
             {% endif %}
         {% endfor %}
     </div>
-    <h2>Upcoming Events</h2>
+    {% assign counter = 0 %}
+    {% for event in site.events %}
+        {% capture nowtime %}{{ 'now' | date: '%s' }}{% endcapture %}
+        {% capture eventtime %}{{ event.date | date: '%s' }}{% endcapture %}
+        {% if eventtime > nowtime and event.type != "featured" %}
+            <h2>Upcoming Events</h2>
+            {% break %}
+        {% endif %}
+    {% endfor %}
     <div class="row">
         {% assign counter = 0 %}
         {% for event in site.events %}
@@ -109,7 +117,7 @@ layout: default
                 {% assign counter = counter | plus: 1 %}
                 <div class="col-md-4">
                     <div class="row">
-                        <img src="{{ site.baseurl }}{{ event.thumbnail }}" class="col-xs-12">
+                        <img src="{{ site.baseurl }}/images/uploads/{{ event.thumbnail }}" class="col-xs-12">
                         <h4 class="col-xs-12">{{ event.title }}</h4>
                         <i class=" date material-icons col-xs-1">date_range</i>
                         <h5 class="date col-xs-10">{{ event.date | date: '%B %d, %Y' }}</h5>
@@ -127,6 +135,7 @@ layout: default
             {% endif %}
         {% endfor %}
     </div>
+    <a class="btn btn-default btn-lg" href="{{ site.baseurl }}/events.html">Find all our events here &raquo;</a>
 </div>
 
 <div id="featured-projects" class="container featured-projects">
