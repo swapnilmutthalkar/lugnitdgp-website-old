@@ -1,5 +1,7 @@
 .blog {
     margin-top: 75px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .blog p {
@@ -11,4 +13,18 @@
 .blog ol li {
     font-size: 18px;
     margin-bottom: 10px;
+}
+
+.blog .blog-separator {
+    height: 40px;
+}
+
+.blog .blog-excerpt p {
+    font-size: 1.5em;
+}
+
+.blog .blog-readmore {
+    font-size: 1.2em;
+    text-align: right;
+    width: 100%;
 }
