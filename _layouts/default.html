@@ -29,6 +29,9 @@
     <div class="container-fluid">
         {{ content }}
     </div>
+    {% if page.layout == "blog" %}
+        <script id="dsq-count-scr" src="//lugnitdgp.disqus.com/count.js" async></script>
+    {% endif %}
 </body>
 
 <!-- Import JS -->
