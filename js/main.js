@@ -25,9 +25,9 @@ function showEventDescription() {
 }
 
 function smoothScrolling() {
-    $('.navbar .nav li a[href^="#"]').click (function(e) {
+    $('.carousel-container a[href="#"]').click (function(e) {
         e.preventDefault();
-        var target = $(this).attr('href');
+        var target = $('#about-us');
         $('html, body').animate({
             'scrollTop' : $(target).offset().top
         }, 600);
