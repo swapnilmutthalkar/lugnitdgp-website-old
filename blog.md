@@ -2,8 +2,6 @@
 layout: blog
 ---
 
-<!--{% for post in site.posts reversed %}
-1. [{{ post.title }}]({{ site.baseurl }}{{ post.url }}){% endfor %}-->
 {% for post in site.posts reversed %}
   <h2>
     <a class="post-link" href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
