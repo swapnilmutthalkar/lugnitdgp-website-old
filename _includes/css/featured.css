@@ -15,8 +15,12 @@
     max-height: 300px;
 }
 
+.featured-projects .projects a {
+    margin-top: 20px;
+}
+
 .featured-projects .projects a .fa-github {
     color: #222222;
-    font-size: 1.8em;
-    margin-top: 20px;
+    font-size: 1.4em;
+    padding-right: 3%;
 }
