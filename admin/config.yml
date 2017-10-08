@@ -29,7 +29,7 @@ collections:
       - {label: "Path to Thumbnail", name: "thumbnail", widget: "string"}
       - {label: "Thumbnail", widget: "image"}
       - {label: "Type", name: "type", widget: "string", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Body", name: "description", widget: "markdown"}
 
   - name: "featured_projects"
     label: "Featured Projects"
