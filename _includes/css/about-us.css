@@ -1,45 +1,39 @@
-.about-us {
-    margin-top: 30px;
-}
-
-.about-us > .row > div {
+#about-us .row div {
     padding: 10px 3%;
     height: 80%;
 }
 
-.about-us > .row > h2 {
-}
-
-.about-us div p {
-    text-align: justify;
+#about-us .row h2 {
     margin-bottom: 20px;
 }
 
-.about-us div i {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    color: #f70d0d;
+#about-us .row h2 i {
+    padding-right: 10px;
+    color: #ba2301;
 }
 
-.row-eq-height > div > btn {
+#about-us .links .col-md-4 {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-.blockquote {
-    text-align: center;
-    margin-top: 60px;
+#about-us .row .col-md-4 a {
+    font-size: 1.15em;
+    color: #e12b00;
+    padding-bottom: 2px;
+    border-bottom: 3px solid #ba2301;
+    transition: all 0.1s;
 }
 
-.contact {
-    margin: 30px 75px;
+#about-us .row .col-md-4 a:hover {
+    text-decoration: none;
+    color: #ba2301;
+    border-bottom: none;
 }
 
-.contact h1 {
-    text-align: center;
-    line-height: 75px;
-}
+@media only screen and (max-width: 992px) {
 
-.contact div {
-    height: 250px;
-    text-align: justify;
-    padding: 25px 30px;
+    #about-us .row .col-md-4 {
+        margin-bottom: 30px;
+    }
 }

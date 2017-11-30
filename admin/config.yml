@@ -41,7 +41,8 @@ collections:
       - {label: "Path to Thumbnail", name: "thumbnail", widget: "string"}
       - {label: "Thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
-
+      - {label: "Link Text", name: "link-text", widget: "markdown"}
+      - {label: "Link Href", name: "link-href", widget: "string"}
 
   - name: "other_information"
     label: "Other Information"

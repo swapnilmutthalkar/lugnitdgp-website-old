@@ -34,8 +34,17 @@ function smoothScrolling() {
     });
 }
 
-$(document).ready(function(){
+function showEventModal() {
+    $(".event .img-container").click(function() {
+        var modalId = $(this).parent().siblings($('.modal')).attr('id');
+        console.log(modalId);
+        $('#' + modalId).modal('show');
+    });
+}
+
+$(document).ready(function() {
     applyStickyNavbar();
     showEventDescription();
     smoothScrolling();
+    showEventModal();
 });

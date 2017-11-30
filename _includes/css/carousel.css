@@ -2,6 +2,7 @@
     position: relative;
     height: 100vh;
     width: 100%;
+    margin-bottom: 60px;
 }
 
 .carousel {
@@ -46,7 +47,8 @@
 
 .carousel .carousel-inner .item .caption h1 {
     margin: 0;
-    font-size: 4.25em;
+    font-size: 4em;
+    font-family: sans-serif;
     margin-bottom: 0.4em;
     font-weight: 800;
     text-transform: uppercase;
@@ -201,18 +203,18 @@
 
 @media(max-width: 992px) {
     .carousel .carousel-inner .item .caption h1 {
-        font-size: 4em;
+        font-size: 3.75em;
     }
 }
 
 @media(max-width: 768px) {
     .carousel .carousel-inner .item .caption h1 {
-        font-size: 3.5em;
+        font-size: 3.25em;
     }
 }
 
 @media(max-width: 576px) {
     .carousel .carousel-inner .item .caption h1 {
-        font-size: 3em;
+        font-size: 2.8em;
     }
 }

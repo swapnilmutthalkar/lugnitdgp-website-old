@@ -7,14 +7,12 @@ layout: default
 <div class="carousel-container">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-    <!-- Indicators -->
     <ol class="carousel-indicators hidden-lg hidden-md">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
 
-      <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active item1">
             <div class="mask"></div>
@@ -44,7 +42,6 @@ layout: default
         </div>
       </div>
 
-      <!-- Left and right controls -->
       <a class="left carousel-control" href="#myCarousel" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left hidden-xs"></span>
         <span class="sr-only">Previous</span>
@@ -58,35 +55,43 @@ layout: default
     <a href="#" class="hidden-md hidden-sm hidden-xs"><i class="fa fa-angle-down"></i></a>
 </div>
 
-<div id="about-us" class="container about-us">
+<div id="about-us" class="container sections">
     <h1 class="text-center">About Us</h1>
     <div class="row">
         <div id="who-are-we" class="col-md-4">
-            <h2>Who are we</h2>
-            <i class="material-icons">supervisor_account</i>
-            <p>The GNU/Linux User’s Group, NIT Durgapur is a community of GNU/Linux Users that promote the use of Free and Open Source Software. The Group was established in 2003 by a bunch of FOSS enthusiasts with the idea of popularising and contributing to Open Source. We are a plethora of designers, contributors and developers that believe in learning and sharing through opening up your mind to Open Source.</p>
-            <a class="btn btn-default btn-lg" href="{{ site.baseurl }}/members.html" role="button">Meet the members &raquo;</a>
+            <h2><i class="material-icons">supervisor_account</i>Who are we</h2>
+            <p class="text-justify">The GNU/Linux User’s Group, NIT Durgapur is a community of GNU/Linux Users that promote the use of Free and Open Source Software. The Group was established in 2003 by a bunch of FOSS enthusiasts with the idea of popularising and contributing to Open Source. We are a plethora of designers, contributors and developers that believe in learning and sharing through opening up your mind to Open Source.</p>
+            <a class="hidden-lg hidden-md" href="{{ site.baseurl }}/members.html" role="button">Meet the members &raquo;</a>
         </div>
         <div id="what-we-do" class="col-md-4">
-            <h2>What we do</h2>
-            <i class="material-icons">code</i>
-            <p>We provide budding enthusiasts like ourselves a forum to contribute and learn about FOSS. Through varied workshops on revolutionary Open Technologies throughout the year, we spread the idea of Open Source to beginners and veterans alike. We bring people together to ideate and contribute to the leading Open technologies. We provide help and resources to everyone who wants to make the web world a better place.</p>
-            <a class="btn btn-default btn-lg" href="{{ site.baseurl }}/our-activities.html" role="button">Look at our activities &raquo;</a>
+            <h2><i class="material-icons">code</i>What we do</h2>
+            <p class="text-justify">We provide budding enthusiasts like ourselves a forum to contribute and learn about FOSS. Through varied workshops on revolutionary Open Technologies throughout the year, we spread the idea of Open Source to beginners and veterans alike. We bring people together to ideate and contribute to the leading Open technologies. We provide help and resources to everyone who wants to make the web world a better place.</p>
+            <a class="hidden-lg hidden-md" href="{{ site.baseurl }}/our-activities.html" role="button">Look at our activities &raquo;</a>
         </div>
         <div id="why-we-do" class="col-md-4">
-            <h2>Why we do it</h2>
-            <i class="material-icons">timeline</i>
-            <p>Being a bunch of FOSS enthusiasts, we preach the idea of “free things are the best things” and firmly believe in sharing knowledge. We strive to elevate the tech culture in our college and for science to make a difference in the world. We believe that this can only be done through giving people digital resources and knowledge in all realms from hardware to software and data to design. We promote FOSS through various endeavours because we believe in the freedom of expression for everyone.</p>
-            <a class="btn btn-default btn-lg" href="{{ site.baseurl }}/how-to-join.html" role="button">See how to join us &raquo;</a>
+            <h2><i class="material-icons">timeline</i>Why we do it</h2>
+            <p class="text-justify">Being a bunch of FOSS enthusiasts, we preach the idea of “free things are the best things” and firmly believe in sharing knowledge. We strive to elevate the tech culture in our college and believe that this can only be done through giving people digital resources and knowledge in all realms from hardware to software and data to design. We promote FOSS through various endeavours because we believe in the freedom of expression for everyone.</p>
+            <a class="hidden-lg hidden-md" href="{{ site.baseurl }}/how-to-join.html" role="button">See how to join us &raquo;</a>
         </div>
     </div>
-    <blockquote class="blockquote col-xs-12">
-        <p>Throw in a quote here</p>
-        <footer>Someone famous, or maybe not</footer>
+    <div class="row visible-lg visible-md links">
+        <div class="col-md-4 text-right">
+            <a href="{{ site.baseurl }}/members.html" role="button">Meet the members &raquo;</a>
+        </div>
+        <div class="col-md-4 text-right">
+            <a href="{{ site.baseurl }}/our-activities.html" role="button">Look at our activities &raquo;</a>
+        </div>
+        <div class="col-md-4 text-right">
+            <a href="{{ site.baseurl }}/how-to-join.html" role="button">See how to join us &raquo;</a>
+        </div>
+    </div>
+    <blockquote class="blockquote">
+        <p class="mb-0">Software is like food, it's better when it's free!</p>
+        <footer class="blockquote-footer">Someone not so famous</footer>
     </blockquote>
 </div>
 
-<div id="events" class="container events">
+<div id="events" class="container sections">
     <h1 class="text-center">Events</h1>
     <h2>Featured Events</h2>
     <div class="row">
@@ -94,22 +99,32 @@ layout: default
         {% for event in site.events %}
             {% if event.type == "featured" %}
                 {% assign counter = counter | plus: 1 %}
-                <div class="col-md-4">
-                    <div class="row">
-                        <img src="{{ site.baseurl }}/images/uploads/{{ event.thumbnail }}" class="col-xs-12">
-                        <h4 class="col-xs-12">{{ event.title }}</h4>
-                        <i class=" date material-icons col-xs-1">date_range</i>
-                        <h5 class="date col-xs-10">{{ event.date | date: '%B %d, %Y' }}</h5>
-                        <i class="time material-icons col-xs-1">alarm</i>
-                        <h5 class="time col-xs-10">{{ event.date | date: '%I:%M %p' }}</h5>
-                        <p class="col-xs-12">
-                            <span class="excerpt">{{ event.description }}</span>
-                            <a class="col-xs-12">Know more &raquo;</a>
-                        </p>
+                <div class="col-sm-4" id="event{{ counter }}">
+                    <div class="row event">
+                        <div class="img-container col-xs-12" style="background-image: url({{ site.baseurl }}/images/uploads/{{ event.thumbnail }})"></div>
+                        <h3 class="col-xs-12">{{ event.title }}</h3>
+                        <h4 class="date col-xs-12"><i class=" date material-icons">date_range</i>{{ event.date | date: '%B %d, %Y' }}</h4>
+                        <h4 class="time col-xs-12"><i class="time material-icons">alarm</i>{{ event.date | date: '%I:%M %p' }}</h4>
+                    </div>
+                    <div class="modal fade" id="modalEvent{{ counter }}" tabindex="-1" role="dialog" aria-labelledby="eventTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title" id="eventTitle">{{ event.title }}</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-responsive" src="{{ site.baseurl }}/images/uploads/{{ event.thumbnail }}" />
+                                    <p class="text-justify">{{ event.description }}</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             {% endif %}
-            {% if counter == 3 %}
+            {% if counter > 3 %}
                 {% break %}
             {% endif %}
         {% endfor %}
@@ -119,10 +134,12 @@ layout: default
         {% capture nowtime %}{{ 'now' | date: '%s' }}{% endcapture %}
         {% capture eventtime %}{{ event.date | date: '%s' }}{% endcapture %}
         {% if eventtime > nowtime and event.type != "featured" %}
-            <h2>Upcoming Events</h2>
+            {% assign flag = true %}
             {% break %}
         {% endif %}
     {% endfor %}
+    {% if flag == true %}
+    <h2>Upcoming Events</h2>
     <div class="row">
         {% assign counter = 0 %}
         {% for event in site.events %}
@@ -130,18 +147,32 @@ layout: default
             {% capture eventtime %}{{ event.date | date: '%s' }}{% endcapture %}
             {% if eventtime > nowtime and event.type != "featured" %}
                 {% assign counter = counter | plus: 1 %}
-                <div class="col-md-4">
-                    <div class="row">
-                        <img src="{{ site.baseurl }}/images/uploads/{{ event.thumbnail }}" class="col-xs-12">
-                        <h4 class="col-xs-12">{{ event.title }}</h4>
-                        <i class=" date material-icons col-xs-1">date_range</i>
-                        <h5 class="date col-xs-10">{{ event.date | date: '%B %d, %Y' }}</h5>
-                        <i class="time material-icons col-xs-1">alarm</i>
-                        <h5 class="time col-xs-10">{{ event.date | date: '%I:%M %p' }}</h5>
+                <div class="col-sm-4" id="event{{ counter | plus: 3 }}">
+                    <div class="row event">
+                        <div class="img-container col-xs-12" style="background-image: url({{ site.baseurl }}/images/uploads/{{ event.thumbnail }})"></div>
+                        <h3 class="col-xs-12">{{ event.title }}</h3>
+                        <h4 class="date col-xs-12"><i class=" date material-icons">date_range</i>{{ event.date | date: '%B %d, %Y' }}</h4>
+                        <h4 class="time col-xs-12"><i class="time material-icons">alarm</i>{{ event.date | date: '%I:%M %p' }}</h4>
                         <p class="col-xs-12">
                             <span class="excerpt">{{ event.description }}</span>
                             <a class="col-xs-12">Know more &raquo;</a>
                         </p>
+                    </div>
+                    <div class="modal fade" id="modalEvent{{ counter | plus: 3 }}" tabindex="-1" role="dialog" aria-labelledby="eventTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title" id="eventTitle">{{ event.title }}</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-responsive" src="{{ site.baseurl }}/images/uploads/{{ event.thumbnail }}" />
+                                    <p>{{ event.description }}</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             {% endif %}
@@ -150,22 +181,33 @@ layout: default
             {% endif %}
         {% endfor %}
     </div>
+    {% endif %}
     <a class="btn btn-default btn-lg" href="{{ site.baseurl }}/events.html">Find all our events here &raquo;</a>
+    <blockquote class="blockquote">
+        <p class="mb-0">The thing with technology is if you do something stupid you can fix it.</p>
+        <footer class="blockquote-footer">Father of Linux</footer>
+    </blockquote>
 </div>
 
-<div id="featured-projects" class="container featured-projects">
+<div id="featured-projects" class="container sections">
     <h1 class="text-center">Featured Projects</h1>
     {% for project in site.featured_projects %}
     <div class="projects row">
         <h2>{{ project.title }}</h2>
-        <div class="col-md-3">
+        <div class="col-sm-4">
             <img class="img-responsive" src="{{ site.baseurl }}/images/uploads/{{ project.thumbnail }}">
         </div>
-        <div class="col-md-9">
+        <div class="col-sm-7 col-12">
             {{ project.content }}
+            <a class="btn btn-lg btn-default hidden-xs hidden-sm" href="{{ project.link-href }}">{{ project.link-text }}</a>
+            <a class="btn btn-default hidden-xl hidden-lg hidden-md" href="{{ project.link-href }}">{{ project.link-text }}</a>
         </div>
     </div>
     {% endfor %}
+    <blockquote class="blockquote">
+        <p class="mb-0">The most important benefit of open source is that other people will do your work for you!</p>
+        <footer class="blockquote-footer">From <cite>the deepest corners of internet</cite></footer>
+    </blockquote>
 </div>
 
 {% include footer.html %}
