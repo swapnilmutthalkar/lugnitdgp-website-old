@@ -10,10 +10,10 @@ layout: default
     <div class="row event">
         <h3>{{ event.title }}</h3>
         <div class="col-md-3">
-            <img class="img-responsive" src="{{ site.baseurl }}/images/uploads/{{ event.thumbnail }}">
+            <img class="img-responsive" src="{{ site.baseurl }}{{ event.thumbnail }}">
         </div>
         <div class="col-md-9">
-            <p>{{ event.description }}</p>
+            {{ event.content }}
             <p><strong>Date: </strong>{{ event.date | date: '%B %d, %Y' }}</p>
             <p><strong>Time: </strong>{{ event.date | date: '%I:%M %p' }}</p>
         </div>

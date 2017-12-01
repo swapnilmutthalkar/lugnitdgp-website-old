@@ -57,6 +57,7 @@
     line-height: 1.4em;
     font-size: 1.1em;
     color: #4f4f4f;
+    text-align: justify;
 }
 
 @media only screen and (max-width: 768px) {

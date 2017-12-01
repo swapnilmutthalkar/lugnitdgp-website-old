@@ -3,15 +3,17 @@ backend:
   repo: lugnitdgp/lugnitdgp.github.io # Path to your Github repository
   branch: master # Branch to update
 
+# publish_mode: editorial_workflow
+
 media_folder: "images/uploads"
 
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "_posts/blog" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+  - name: "blog"
+    label: "Blog"
+    folder: "_posts/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "posts"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Author", name: "author", widget: "string"}
@@ -25,11 +27,10 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date of Event", name: "date", widget: "string", format: "YYYY-MM-DD hh:mm 05:30"}
-      - {label: "Path to Thumbnail", name: "thumbnail", widget: "string"}
-      - {label: "Thumbnail", widget: "image"}
+      - {label: "Date and Time", name: "date", widget: "datetime"}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image"}
       - {label: "Type", name: "type", widget: "string", required: false}
-      - {label: "Body", name: "description", widget: "markdown"}
+      - {label: "Description", name: "body", widget: "markdown"}
 
   - name: "featured_projects"
     label: "Featured Projects"
@@ -38,11 +39,10 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Path to Thumbnail", name: "thumbnail", widget: "string"}
-      - {label: "Thumbnail", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Link Text", name: "link-text", widget: "markdown"}
-      - {label: "Link Href", name: "link-href", widget: "string"}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image"}
+      - {label: "Button", name: "button", widget: "string"}
+      - {label: "Link", name: "link", widget: "string"}
+      - {label: "Description", name: "body", widget: "markdown"}
 
   - name: "other_information"
     label: "Other Information"
