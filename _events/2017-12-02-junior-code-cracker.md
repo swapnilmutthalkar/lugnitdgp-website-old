@@ -10,10 +10,10 @@ An event that tests your logical skills and demands you to reason out with some 
 
 Top 3 teams of the JCC get a direct entry to the 2nd round of auditions of GLUG. Phew ! Did I forget to mention the cash prize? Yes, there are cash prizes upto 5k for the winners- and all of it for free. Free participation, free event and yet, sooo much to gain!
 
-Register your teams now >> [jcc.nitdgplug.org](jcc.nitdgplug.org)
+Register your teams at [jcc.nitdgplug.org](http://jcc.nitdgplug.org)
 
 The first round (qualifying round) will be held on the 1st of November, 5.30 p.m. at LG 12-13 (Old academic building).
 
-PS:  
-1. Participation certificates for all the GLUG card holders.  
+PS:
+1. Participation certificates for all the GLUG card holders.
 2. NO CODING SKILLS REQUIRED.
