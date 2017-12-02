@@ -15,7 +15,20 @@ layout: default
         <div class="col-md-9">
             {{ event.content }}
             <p><strong>Date: </strong>{{ event.date | date: '%B %d, %Y' }}</p>
-            <p><strong>Time: </strong>{{ event.date | date: '%I:%M %p' }}</p>
+            <p>
+                <strong>Time: </strong>
+                {% assign date_timezone = event.date | date: '%z' %}
+                {% assign cur_timezone = "now" | date: '%z' %}
+                {% if date_timezone == "+0000" %}
+                    {% if cur_timezone == "+0000" %}
+                        {{ event.date | date: '%s' | plus: 19800 | date: '%I:%M %p' }}
+                    {% else %}
+                        {{ event.date | date: '%s' | date: '%I:%M %p' }}
+                    {% endif %}
+                {% else %}
+                    {{ event.date | date: '%I:%M %p' }}
+                {% endif %}
+            </p>
         </div>
     </div>
     {% endfor %}

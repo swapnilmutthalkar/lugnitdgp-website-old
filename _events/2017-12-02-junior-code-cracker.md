@@ -1,6 +1,6 @@
 ---
 title: Junior Code Cracker
-date: 2017-11-01T12:00:04.000Z
+date: 2017-11-01T17:30:04+05:30
 thumbnail: /images/uploads/junior_code_cracker.jpg
 type: featured
 ---
@@ -17,4 +17,3 @@ The first round (qualifying round) will be held on the 1st of November, 5.30 p.m
 PS:  
 1. Participation certificates for all the GLUG card holders.  
 2. NO CODING SKILLS REQUIRED.
-

@@ -11,5 +11,3 @@ Following are the link to the playlists :
 1. [A Technical Head-start to college life part 1](https://goo.gl/TXu2bG)
 
 2. [A Technical Head-start to college life part 2](https://goo.gl/aUkXjx)
-
-
