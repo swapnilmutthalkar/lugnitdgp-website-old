@@ -1,3 +1,47 @@
 .linit {
     margin-top: 100px;
 }
+
+.linit h2 {
+    margin-bottom: 30px;
+}
+
+.linit .thumbnail-container {
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.linit .thumbnail-container img.img-responsive {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.linit .thumbnail-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 15%;
+
+    width: 70%;
+    height: 100%;
+
+    transition: .5s ease;
+
+    opacity: 0;
+    background-color: #777;
+}
+
+.linit .thumbnail-container a:hover .overlay {
+    opacity: .8;
+}
+
+.linit .thumbnail-container .overlay .glyphicon {
+    font-size: 7em;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    color: white;
+}
