@@ -104,19 +104,7 @@ layout: default
                         <div class="img-container col-xs-12" style="background-image: url({{ site.baseurl }}{{ event.thumbnail }})"></div>
                         <h3 class="col-xs-12">{{ event.title }}</h3>
                         <h4 class="date col-xs-12"><i class=" date material-icons">date_range</i>{{ event.date | date: '%B %d, %Y' }}</h4>
-                        <h4 class="time col-xs-12"><i class="time material-icons">alarm</i>
-                            {% assign date_timezone = event.date | date: '%z' %}
-                            {% assign cur_timezone = "now" | date: '%z' %}
-                            {% if date_timezone == "+0000" %}
-                                {% if cur_timezone == "+0000" %}
-                                    {{ event.date | date: '%s' | plus: 19800 | date: '%I:%M %p' }}
-                                {% else %}
-                                    {{ event.date | date: '%s' | date: '%I:%M %p' }}
-                                {% endif %}
-                            {% else %}
-                                {{ event.date | date: '%I:%M %p' }}
-                            {% endif %}
-                        </h4>
+                        <h4 class="time col-xs-12"><i class="time material-icons">alarm</i>{{ event.date | date: '%s' | date: '%I:%M %p' }}</h4>
                     </div>
                     <div class="modal fade" id="modalEvent{{ counter }}" tabindex="-1" role="dialog" aria-labelledby="eventTitle" aria-hidden="true">
                         <div class="modal-dialog" role="document">
@@ -164,19 +152,7 @@ layout: default
                         <div class="img-container col-xs-12" style="background-image: url({{ site.baseurl }}{{ event.thumbnail }})"></div>
                         <h3 class="col-xs-12">{{ event.title }}</h3>
                         <h4 class="date col-xs-12"><i class=" date material-icons">date_range</i>{{ event.date | date: '%B %d, %Y' }}</h4>
-                        <h4 class="time col-xs-12"><i class="time material-icons">alarm</i>
-                            {% assign date_timezone = event.date | date: '%z' %}
-                            {% assign cur_timezone = "now" | date: '%z' %}
-                            {% if date_timezone == "+0000" %}
-                                {% if cur_timezone == "+0000" %}
-                                    {{ event.date | date: '%s' | plus: 19800 | date: '%I:%M %p' }}
-                                {% else %}
-                                    {{ event.date | date: '%s' | date: '%I:%M %p' }}
-                                {% endif %}
-                            {% else %}
-                                {{ event.date | date: '%I:%M %p' }}
-                            {% endif %}
-                        </h4>
+                        <h4 class="time col-xs-12"><i class="time material-icons">alarm</i>{{ event.date | date: '%s' | date: '%I:%M %p' }}</h4>
                         <p class="col-xs-12">
                             <span class="excerpt">{{ event.description }}</span>
                             <a class="col-xs-12">Know more &raquo;</a>
