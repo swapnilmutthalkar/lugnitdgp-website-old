@@ -36,7 +36,6 @@ collections:
     label: "Featured Projects"
     folder: "_featured_projects"
     create: true
-    slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Thumbnail", name: "thumbnail", widget: "image"}
@@ -44,11 +43,20 @@ collections:
       - {label: "Link", name: "link", widget: "string"}
       - {label: "Description", name: "body", widget: "markdown"}
 
+  - name: "linit"
+    label: "Linit"
+    folder: "_linit"
+    create: true
+    slug: "linit-{{slug}}"
+    fields:
+      - {label: "Year", name: "title", widget: "string"}
+      - {label: "Link", name: "link", widget: "string"}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image"}
+
   - name: "other_information"
     label: "Other Information"
     folder: "_other_information"
     create: false
-    slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "hidden"}
       - {label: "Body", name: "body", widget: "markdown"}

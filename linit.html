@@ -7,18 +7,17 @@ layout: default
 <div class="container linit">
     <h2 class="text-center">Download your copies of linit from here</h2>
     <div class="row">
+        {% for linit in site.linit %}
         <div class="col-md-4 thumbnail-container">
-            <a href="https://drive.google.com/file/d/0B7D2iONEImRcTXZQeE5PUnpGSzQ/view?usp=sharing">
-                <img src="{{ site.baseurl }}/images/uploads/linit16.jpg" alt="Linit 2016" class="img-responsive">
-                <div class="overlay"><span class="glyphicon glyphicon-cloud-download" aria-hidden="true"></span></div>
+    		<a href="{{ linit.link }}">
+    			<img src="{{ site.baseurl }}{{ linit.thumbnail }}" alt="Linit {{ linit.title }}" class="img-responsive">
+                <div class="overlay">
+                    <span class="glyphicon glyphicon-cloud-download" aria-hidden="true"><br></span>
+                    <span class="overlay-text">{{ linit.title }}</span>
+                </div>
             </a>
         </div>
-        <div class="col-md-4 thumbnail-container">
-            <a href="https://drive.google.com/file/d/0B-hTKMU86vD6bjNVZEVzeGlqVFk/view?usp=sharing">
-                <img src="{{ site.baseurl }}/images/uploads/linit15.jpg" alt="Linit 2015" class="img-responsive">
-                <div class="overlay"><span class="glyphicon glyphicon-cloud-download" aria-hidden="true"></span></div>
-            </a>
-        </div>
+        {% endfor %}
     </div>
 </div>
 

@@ -17,6 +17,7 @@ collections:
   - events
   - featured_projects
   - other_information
+  - linit
 
 # Other settings
 comments: true
