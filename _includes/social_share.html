@@ -5,7 +5,26 @@
     <a class="a2a_button_hacker_news pull-right"></a>
 </div>
 <script>
+    // A custom "onShare" handler for AddToAny
+    function events_addtoany_onshare(share_data) {
+        var old_url = share_data.url;
+        if (~old_url.indexOf("/events")) {
+            var hash_id = '#' + $(share_data.node).parent().parent().attr('id');
+            var new_url = old_url;
+            if (old_url.indexOf("#") == -1) {
+                new_url = old_url + hash_id;
+            }
+            return {
+                title: "Hey! Check out this great event from GNU/Linux Users' Group",
+                url: new_url
+            };
+        }
+    }
+    // Setup AddToAny "onShare" callback function
     var a2a_config = a2a_config || {};
-    a2a_config.onclick = 1;
+    a2a_config.callbacks = a2a_config.callbacks || [];
+    a2a_config.callbacks.push({
+        share: events_addtoany_onshare
+    });
 </script>
 <script async src="https://static.addtoany.com/menu/page.js"></script>

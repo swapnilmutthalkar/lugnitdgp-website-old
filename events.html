@@ -4,21 +4,36 @@ layout: default
 
 {% include navbar.html %}
 
-<div class="container event-page">
-    <h1 class="text-center">Events</h1>
-    {% for event in site.events %}
-    <div class="row event">
-        <h3>{{ event.title }}</h3>
-        <div class="col-md-3">
-            <img class="img-responsive" src="{{ site.baseurl }}{{ event.thumbnail }}">
-        </div>
-        <div class="col-md-9">
-            {{ event.content }}
-            <p><strong>Date: </strong>{{ event.date | date: '%B %d, %Y' }}</p>
-            <p><strong>Time: </strong>{{ event.date | date: '%s' | date: '%I:%M %p' }}</p>
+<div class="container-fluid event-page">
+    <div class="row">
+        <nav class="col-sm-3 col-sm-push-9 sidebar-container" role="navigation">
+            <div id="sidebar">
+                <ul id="sidebar-nav">
+                {% for event in site.events reversed %}
+                    <li><a href="#">{{ event.title }}</a></li>
+                {% endfor %}
+                </ul>
+            </div>
+        </nav>
+        <div class="col-sm-9 col-sm-pull-3 event-container">
+            <h1 class="text-center">Check out our events!</h1>
+            {% for event in site.events reversed %}
+            <div class="col-md-12 event">
+                <h2 class="text-center">{{ event.title }}</h2>
+                <div class="event-info">
+                    <span class="text-left"><span class="glyphicon glyphicon-calendar"></span> {{ event.date | date: '%B %d, %Y' }}</span>
+                    <span class="text-right"><span class="glyphicon glyphicon-time"></span> {{ event.date | date: '%s' | date: '%I:%M %p' }}</span>
+                </div>
+                {% include social_share.html %}
+                <div class="event-desc">{{ event.content }}</div>
+                <a class="show-event-desc" href="#">Show more</a>
+                <div class="event-thumbnail">
+                    <img class="img-responsive" src="{{ site.baseurl }}{{ event.thumbnail }}">
+                </div>
+            </div>
+            {% endfor %}
         </div>
     </div>
-    {% endfor %}
 </div>
 
 {% include footer.html %}

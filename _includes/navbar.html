@@ -4,7 +4,7 @@
             <a class="navbar-brand" href="/">
                 <img id="nav-logo" alt="GLUG Logo" src="{{ site.baseurl }}/images/logo.png">
             </a>
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsible-navbar" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -12,10 +12,19 @@
             </button>
             <a class="hidden-sm hidden-xs navbar-brand brand" href="{{ site.baseurl }}/">GNU Linux Users' Group</a>
         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="collapsible-navbar">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="{{ site.baseurl }}/"> Home </a></li>
-                <li><a href="{{ site.baseurl }}/events"> Events </a></li>
+                <li class="hidden-xs"><a href="{{ site.baseurl }}/events"> Events </a></li>
+                <li class="hidden-lg hidden-md hidden-sm dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Events
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    {% for event in site.events reversed %}
+                        <li><a href="#">{{ event.title }}</a></li>
+                    {% endfor %}
+                    </ul>
+                </li>
                 <li><a href="{{ site.baseurl }}/members"> Members </a></li>
                 <li><a href="{{ site.baseurl }}/how-to-join"> Join Us </a></li>
                 <li><a href="{{ site.baseurl }}/our-activities"> Our Activities </a></li>
