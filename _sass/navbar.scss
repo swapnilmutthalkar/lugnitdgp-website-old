@@ -1,0 +1,50 @@
+/* --------------------- Navbar --------------------- */
+
+.navbar {
+
+    #nav-logo {
+        transition: all 1s;
+        width: 4em;
+        transform: translate(0,-1em);
+
+        &:hover {
+            transition: all 1s;
+            transform: scale(1.2) translate(0,-1em);
+        }
+    }
+
+    .navbar-nav .open .dropdown-menu > li > a {
+        @media only screen and (max-width: 768px) {
+            line-height: 20px;
+
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+    }
+}
+
+.navbar.affix-top {
+    background-color: transparent;
+    border-bottom: 2px solid #111111;
+}
+
+.navbar.affix {
+    animation: {
+        name: show;
+        duration: 1.5s;
+        fill-mode: forwards;
+    }
+}
+
+/* --------------------- Animations --------------------- */
+
+@keyframes show {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity:0.9;
+    }
+}

@@ -14,7 +14,7 @@ layout: default
       </ol>
 
       <div class="carousel-inner">
-        <div class="item active item1">
+        <div class="item active" style="background-image: url({{ site.baseurl }}/images/slider/1.jpg);">
             <div class="mask"></div>
             <div class="caption">
                 <h1>GNU/LINUX Users' Group <span>welcomes you!</span></h1>
@@ -23,7 +23,7 @@ layout: default
             </div>
         </div>
 
-        <div class="item item2">
+        <div class="item" style="background-image: url({{ site.baseurl }}/images/slider/2.jpg);">
             <div class="mask"></div>
             <div class="caption">
                 <h1><span>Say hello to</span> Mukti!</h1>
@@ -32,7 +32,7 @@ layout: default
             </div>
         </div>
 
-        <div class="item item3">
+        <div class="item" style="background-image: url({{ site.baseurl }}/images/slider/3.jpg);">
             <div class="mask"></div>
             <div class="caption">
                 <h1>We are the coolest geeks <span>in town!</span></h1>
@@ -94,17 +94,17 @@ layout: default
 <div id="events" class="container sections">
     <h1 class="text-center">Events</h1>
     <h2>Featured Events</h2>
-    <div class="row">
+    <div class="row featured-events">
         {% assign counter = 0 %}
         {% for event in site.events %}
             {% if event.type == "featured" %}
                 {% assign counter = counter | plus: 1 %}
-                <div class="col-sm-4" id="event{{ counter }}">
-                    <div class="row event">
+                <div class="col-sm-4 event" id="event{{ counter }}">
+                    <div class="row">
                         <div class="img-container col-xs-12" style="background-image: url({{ site.baseurl }}{{ event.thumbnail }})"></div>
-                        <h3 class="col-xs-12">{{ event.title }}</h3>
-                        <h4 class="date col-xs-12"><i class=" date material-icons">date_range</i>{{ event.date | date: '%B %d, %Y' }}</h4>
-                        <h4 class="time col-xs-12"><i class="time material-icons">alarm</i>{{ event.date | date: '%s' | date: '%I:%M %p' }}</h4>
+                        <h3 class="col-xs-12 event-title">{{ event.title }}</h3>
+                        <h4 class="date col-xs-12 event-info"><i class=" date material-icons">date_range</i> {{ event.date | date: '%B %d, %Y' }}</h4>
+                        <h4 class="time col-xs-12 event-info"><i class="time material-icons">alarm</i> {{ event.date | date: '%s' | date: '%I:%M %p' }}</h4>
                     </div>
                     <div class="modal fade" id="modalEvent{{ counter }}" tabindex="-1" role="dialog" aria-labelledby="eventTitle" aria-hidden="true">
                         <div class="modal-dialog" role="document">
@@ -140,7 +140,7 @@ layout: default
     {% endfor %}
     {% if flag == true %}
     <h2>Upcoming Events</h2>
-    <div class="row">
+    <div class="row upcoming-events">
         {% assign counter = 0 %}
         {% for event in site.events %}
             {% capture nowtime %}{{ 'now' | date: '%s' }}{% endcapture %}
@@ -151,8 +151,8 @@ layout: default
                     <div class="row event">
                         <div class="img-container col-xs-12" style="background-image: url({{ site.baseurl }}{{ event.thumbnail }})"></div>
                         <h3 class="col-xs-12">{{ event.title }}</h3>
-                        <h4 class="date col-xs-12"><i class=" date material-icons">date_range</i>{{ event.date | date: '%B %d, %Y' }}</h4>
-                        <h4 class="time col-xs-12"><i class="time material-icons">alarm</i>{{ event.date | date: '%s' | date: '%I:%M %p' }}</h4>
+                        <h4 class="date col-xs-12"><i class=" date material-icons">date_range</i> {{ event.date | date: '%B %d, %Y' }}</h4>
+                        <h4 class="time col-xs-12"><i class="time material-icons">alarm</i> {{ event.date | date: '%s' | date: '%I:%M %p' }}</h4>
                         <p class="col-xs-12">
                             <span class="excerpt">{{ event.description }}</span>
                             <a class="col-xs-12">Know more &raquo;</a>
@@ -193,11 +193,11 @@ layout: default
     <h1 class="text-center">Featured Projects</h1>
     {% for project in site.featured_projects %}
     <div class="projects row">
-        <h2>{{ project.title }}</h2>
-        <div class="col-sm-4">
+        <h2 class="text-center">{{ project.title }}</h2>
+        <div class="col-md-4 col-sm-4">
             <img class="img-responsive" src="{{ site.baseurl }}{{ project.thumbnail }}">
         </div>
-        <div class="col-sm-7 col-12">
+        <div class="col-md-offset-1 col-md-7 col-sm-8 col-12">
             {{ project.content }}
             <a class="btn btn-lg btn-default hidden-xs hidden-sm" href="{{ project.link }}">{{ project.button }}</a>
             <a class="btn btn-default hidden-xl hidden-lg hidden-md" href="{{ project.link }}">{{ project.button }}</a>

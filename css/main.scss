@@ -1,0 +1,50 @@
+---
+
+---
+
+$font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/* ------------------------------ General ------------------------------ */
+
+html, body {
+    height: 100%;
+    max-width: 100%;
+}
+
+body {
+
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 22px;
+    color: #666666;
+
+    div.container-fluid {
+        position: relative;
+        min-height: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 130px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family;
+    font-weight: 300;
+    margin: 0px;
+    color: #333333;
+    letter-spacing: -2px;
+}
+
+/* --------------------- Imports --------------------- */
+
+@import
+    "navbar",
+    "home",
+    "footer",
+    "events",
+    "members",
+    "join-us",
+    "our-activities",
+    "blog",
+    "post",
+    "contact-us"
