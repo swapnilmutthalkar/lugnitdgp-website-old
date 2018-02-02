@@ -30,8 +30,7 @@ title: Members
 3. Devansh Goenka
 4. Shreyashee Sinha
 5. Vivek Modi
-6. Amit Tulshyan
-7. Sudeshna Sen
+6. Sudeshna Sen
 8. Divyanshu Mehta
 9. Mayank Agarwal
 10. Abhishek Prasad
@@ -51,3 +50,25 @@ title: Members
 10. Poulomi Hore
 11. Arpan Chatterjee
 12. Parul Chandel
+13. Tanmoy Ghosh
+14. Debleena Sen
+
+
+## 1st years
+
+1. Ayush Kumar Shukla
+2. Agnivarma Trivedi
+3. Aditya Gupta
+4. Manisha Mohani
+5. Sudipta Pandit
+6. Saumya Sarawagi
+7. Mayank Tayal
+8. Tiyas Dey
+9. Akshat Jain
+10. Archana Choudhary
+11. Jayjeet Chakraborty
+12. Avinash Agarwal
+13. Liman Rahman
+14. Rahul Otwani
+15. Chandan Chowdhary
+16. Ashish Kumar Tiwari
