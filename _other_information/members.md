@@ -23,6 +23,7 @@ title: Members
 1. Vivek Kumar Rajak
 2. Sumedha Rani
 3. Rahul Ravi Prakash
+4. Akanksha Rajwar
 
 ## 3rd years
 
@@ -73,3 +74,4 @@ title: Members
 14. Rahul Otwani
 15. Chandan Chowdhary
 16. Ashish Kumar Tiwari
+
