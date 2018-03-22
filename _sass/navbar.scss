@@ -21,6 +21,14 @@
             padding-bottom: 8px;
         }
     }
+
+    /*fix transparency issue on smaller screen size*/
+
+    @media only screen and (max-width: 768px) {
+        background-color:#222!important;
+        opacity:0.9;
+    } 
+
 }
 
 .navbar.affix-top {
